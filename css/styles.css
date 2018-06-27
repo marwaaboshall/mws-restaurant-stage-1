@@ -131,11 +131,16 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;   
+  flex-wrap: wrap;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -150,10 +155,9 @@ nav h1 a {
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
-  margin: 0;
   max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
+  height: auto;
+  margin: 20px auto;
 }
 #restaurants-list li h1 {
   color: #f18200;
