@@ -1,0 +1,21 @@
+@media screen and (max-width: 700px) {
+  .inside #map-container {
+    height: 600px;
+    width: 100%;
+    position: unset;
+  }
+    
+  #restaurant-container, #reviews-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav h1 {
+    padding: 10px;
+  }
+  #footer {
+    font-size: 6pt;
+    padding: 15px 0 15px 0;
+  }
+}
