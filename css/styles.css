@@ -123,7 +123,7 @@ nav h1 a {
   display: flex;
   flex-wrap: wrap;
 }
-.filter-options label {
+.filter-options h2 {
   color: white;
   font-size: 1rem;
   font-weight: normal;
@@ -172,7 +172,7 @@ nav h1 a {
   height: auto;
   margin: 20px auto;
 }
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
