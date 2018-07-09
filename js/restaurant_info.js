@@ -164,3 +164,13 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+/**
+ * Add title to iframe when loading the page
+ */
+
+window.addEventListener('load', (event) => {
+  let iframeElement = document.querySelector('iframe');
+  iframeElement.title = 'Map iframe';
+  iframeElement.tabIndex = -1;
+});
