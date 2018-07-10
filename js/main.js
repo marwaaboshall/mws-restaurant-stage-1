@@ -159,9 +159,6 @@ createRestaurantHTML = (restaurant) => {
 
   const more = document.createElement('button');
   more.innerHTML = 'View Details';
-  // more.addEventListener('click', ()=> {
-  //   window.open(DBHelper.urlForRestaurant(restaurant), '_self');
-  // });
   more.onclick = ()=> {
     window.open(DBHelper.urlForRestaurant(restaurant), '_self');
   };
