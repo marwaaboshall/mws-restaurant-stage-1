@@ -130,6 +130,9 @@ nav h1 a {
   line-height: 1;
   margin: 0 20px;
 }
+.filter-options h2:focus {
+  outline-color: white;
+}
 .filter-options select {
   background-color: white;
   border: 1px solid #fff;
@@ -141,7 +144,10 @@ nav h1 a {
   padding: 0 10px;
   width: 200px;
 }
-
+.filter-options select:focus {
+  background-color: red;
+  color: white;
+}
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   display: -webkit-flex; /* Safari */
@@ -197,6 +203,13 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+#restaurants-list li button:hover,
+#restaurants-list li button:focus {
+  background-color: black;
+  text-decoration: underline;
 }
 
 /* ====================== Restaurant Details ====================== */
