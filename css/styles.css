@@ -66,16 +66,16 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
-.skip-link {
+header .skip-link {
   position: absolute;
   top: -40px;
   left: 0;
-  background: blue;
+  background: #da2d7f;
   color: white;
   padding: 8px;
   z-index: 100;
 }
-.skip-link:focus {
+header .skip-link:focus {
   top: 0;
 }
 #breadcrumb {
