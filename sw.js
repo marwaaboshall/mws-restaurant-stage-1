@@ -1,5 +1,6 @@
 //Setting up a new service worker
 let staticCacheName = 'resapp-static-v2';
+
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(staticCacheName).then((cache) => {
