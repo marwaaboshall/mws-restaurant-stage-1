@@ -1,3 +1,14 @@
+/**
+ * Registering service worker
+ */
+if(navigator.serviceWorker) {
+  navigator.serviceWorker.register('sw.js').then(() => {
+    console.log('Service workder registered successfully');
+  }).catch((e) => {
+    console.log('Error registering Service Worker: ', e);
+  });
+}
+
 let restaurants,
   neighborhoods,
   cuisines
@@ -187,6 +198,8 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 
 window.addEventListener('load', (event) => {
   let iframeElement = document.querySelector('iframe');
-  iframeElement.title = 'Map iframe';
-  iframeElement.tabIndex = -1;
+  if(iframeElement) {
+    iframeElement.title = 'Map iframe';
+    iframeElement.tabIndex = -1;
+  }
 });
