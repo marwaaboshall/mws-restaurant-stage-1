@@ -1,3 +1,14 @@
+/**
+ * Registering service worker
+ */
+if(navigator.serviceWorker) {
+  navigator.serviceWorker.register('sw.js').then(() => {
+    console.log('Service workder registered successfully');
+  }).catch((e) => {
+    console.log('Error registering Service Worker: ', e);
+  });
+}
+
 let restaurant;
 var map;
 
