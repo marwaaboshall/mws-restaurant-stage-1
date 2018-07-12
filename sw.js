@@ -1,5 +1,5 @@
 //Setting up a new service worker
-let staticCacheName = 'resapp-static-v2';
+let staticCacheName = 'resapp-static-v20';
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
@@ -45,7 +45,7 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
     event.respondWith(
-        caches.match(event.request).then((response) =>{
+        caches.match(event.request, { ignoreSearch: true }).then((response) =>{
             if(response) return response; 
             return fetch(event.request);
         })

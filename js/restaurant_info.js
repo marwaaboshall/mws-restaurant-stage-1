@@ -183,6 +183,8 @@ getParameterByName = (name, url) => {
 
 window.addEventListener('load', (event) => {
   let iframeElement = document.querySelector('iframe');
-  iframeElement.title = 'Map iframe';
-  iframeElement.tabIndex = -1;
+  if(iframeElement) {
+    iframeElement.title = 'Map iframe';
+    iframeElement.tabIndex = -1;
+  }
 });
